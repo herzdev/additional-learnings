@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Horizontale Ausrichtung; Verfügbare Optionen: flex-start, flex-end, center;*/
+    /* space-around und space-between nur dann sinnvoll, wenn mehrere Items in einem Container vorhanden sind*/
+  }
+  
+  .menu {
+    /*border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    /* border: 4px solid #6922da; */
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Values ähnlich wie bei justify-content (center, flex-start, flex-end) und zusätzlich die Werte stretch und baseline */
+
+  }
+
+  /* Erstellt Rahmen um Div Elemente innerhalb des .header Flex-Containers*/ 
+  /* .social,
+  .logo,
+  .subscribe {
+    border: 1px solid #5995DA;
+  } */
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* .photo-grid {
+    width: 900px;
+    display: flex;
+    /* justify-content: center; 
+    flex-wrap: wrap; /* Items innerhalb des Contaienrs die in der Breite nicht mehr passen, werden in die nächste Zeile gerückt 
+    flex-direction: column;  Ermöglicht Darstellung in der Vertikalen, anstatt in der Horizontalen; Vor allem bei Mobilen Endgeräten gängig; bei Desktops werden Inhalte meist eher horizontal angezeigt
+    align-items: center;
+  }  */
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;  /* <--- Really freaking cool! */
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .first-item {
+    order: 1;
+  }
+
+  .last-item {
+    order: -1;
+  }
+
+  /* .fourandfive {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  } */
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  /* .footer-three {
+    flex: 2;
+  }  */
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
