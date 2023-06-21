@@ -20,3 +20,35 @@ content.textContent = "This is the glorious text-content!";
 
 container.appendChild(content);
 
+//TOP exercise https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events#exercise
+
+//1. a <p> with red text that says “Hey I’m red!”
+
+const p = document.createElement("p");
+p.style.color = "red";
+p.textContent = "Hey I'm red!";
+
+container.appendChild(p);
+
+//2. an <h3> with blue text that says “I’m a blue h3!”
+const h3 = document.createElement("h3");
+h3.style.color = "blue";
+h3.innerText = "I'm a blue h3!";
+
+container.appendChild(h3);
+
+//3. a <div> with a black border and pink background color with the following elements inside of it:
+
+const newDiv = document.createElement("div");
+newDiv.style.cssText = "border: solid black 1px; background-color: pink;";
+
+const h1 = document.createElement("h1");
+const newP = document.createElement("p");
+
+h1.innerText = "I'm in a div";
+newP.innerText = "ME TOO!";
+
+newDiv.appendChild(h1);
+newDiv.appendChild(newP);
+
+container.appendChild(newDiv);
